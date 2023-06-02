@@ -23,11 +23,10 @@ jobs:
           node-version: lts/*
 
       - name: Build step
-        run: yarn install && npm run build # 📝 Update the build command(s)
-
+        run: yarn install && export CI=false && npm run build # 📝 Update the build command(s)
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "fair-rat-44"
-          entrypoint: "index.js" # 📝 Update the entrypoint
+          entrypoint: "src/index.tsx" # 📝 Update the entrypoint
           root: "."
