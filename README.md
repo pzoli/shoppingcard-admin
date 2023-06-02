@@ -7,3 +7,4 @@ yarn install
 # Run
 ```
 npm start
+```
