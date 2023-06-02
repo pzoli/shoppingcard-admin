@@ -29,5 +29,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "fair-rat-44"
-          entrypoint: "index.js" # 📝 Update the entrypoint
+          entrypoint: "src/index.tsx" # 📝 Update the entrypoint
           root: "."
